@@ -2,10 +2,9 @@
 
 from client import DiscourseClient
 
-
 def main():
     """Runs the CLI application"""
-    host = "Host_URL_Here"
+    host = input("Enter the Discourse API host URL: ")
     api_username = input("Enter username: ")
     api_key = input("Input API key: ")
     while True:
@@ -13,7 +12,7 @@ def main():
         end_date = input("Input the end date (input start date again if you only want one day): ")
         client = DiscourseClient(host, api_username, api_key, start_date, end_date)
         print(client.get_report())
-        if input("Are you done? (True/False) ") == "True":
+        if input("Are you done? (True/False) ").lower() == "true":
             return
 
 if __name__ == "__main__":
