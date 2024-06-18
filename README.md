@@ -5,4 +5,4 @@ Massive thank you to YoZheng for writing the OG scripts this is based on. (https
 
 Often logs dates out of order. But that doesn't affect my use case, so likely wont bother to fix.
 
-Added a "to google sheets" update for the client.py. (use it instead to ship to a google sheets doc. 
+Added a "to google sheets" update for the client.py. (use it instead to ship to a google sheets doc.)
